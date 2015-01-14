@@ -11,6 +11,8 @@ recipe "phpmyadmin::mysql", "Creates the phpmyadmin-database and sets database p
 recipe "phpmyadmin::apache2", "Configures phpmyadmin to be used with apache2"
 recipe "phpmyadmin::nginx", "Configures phpmyadmin to be used with nginx"
 
+depends 'openssl'
+
 %w{ ubuntu debian centos redhat amazon scientific oracle fedora }.each do |os|
   supports os
 end
