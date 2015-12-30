@@ -1,6 +1,6 @@
 include_recipe "apache2"
 
-link "#{node['apache']['dir']}/sites-available/phpmyadmin" do
+link "#{node['apache']['dir']}/sites-available/phpmyadmin.conf" do
     action :create
     to "#{node[:phpmyadmin][:apache2][:site_config]}"
 end
