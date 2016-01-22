@@ -19,6 +19,7 @@ default[:phpmyadmin][:cfg][:allow_no_password]      =   false
 default[:phpmyadmin][:cfg][:control_database]       =   'phpmyadmin'
 default[:phpmyadmin][:cfg][:control_user]           =   'phpmyadmin'
 #default[:phpmyadmin][:cfg][:control_user_password] =   '' - will be set to an automatically generated password unless specified
+default[:phpmyadmin][:cfg][:login_cookie_validity]  =   '300'
 
 default[:phpmyadmin][:webserver]                    =   'apache2'
 
